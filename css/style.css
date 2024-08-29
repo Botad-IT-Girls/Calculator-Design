@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    overflow-y: hidden;
+}
+
+.calculator {
+    background-color: #70ccf0;
+    /* Sky blue color */
+    padding: 20px;
+    border-radius: 15px;
+    width: 280px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.display {
+    width: 93%;
+    height: 40px;
+    text-align: right;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    background-color: #000;
+    /* Black color */
+    color: #fff;
+    /* border-radius: 15px; */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    /* overflow: hidden; */
+    /* border-radius: 15px; */
+    /* Remove space between buttons */
+}
+
+.buttons button {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    text-align: center;
+}
+
+.buttons button:active {
+    background-color: #ddd;
+    /* Light grey color when button is pressed */
+}
+
+/* Target the first row and set its background color to gray */
+.buttons .row:first-child button {
+    background-color: #f0f0f0;
+    /* Gray color for first row */
+}
+
+.buttons .equal {
+    grid-row: span 4;
+    background-color: rgba(243, 91, 52, 0.884);
+    color: #fff;
+    border: 1px solid #ccc;
+}
+
+.buttons .row {
+    display: contents;
+    /* Ensure buttons are displayed in the grid */
+}
