@@ -145,7 +145,7 @@ function calculate() {
         }
     }
 
-    // Ensure both num1 and num2 are valid or not
+    // both num1 and num2 are valid or not
     if (num1 === '' || num2 === '' || operator === '' || operatorCount === 0) {
         display.value = 'Error';
         return;
@@ -154,7 +154,6 @@ function calculate() {
     num1 = Number(num1);
     num2 = Number(num2);
 
-    // Perform calculation based on operator
     switch (operator) {
         case '+':
             result = num1 + num2;
